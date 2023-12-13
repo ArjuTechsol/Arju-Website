@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 0.05rem;
+}
+
+/* ############################################ UTILITY CLASSES ############################################*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  color: #000000;
+  background-color: #47c972;
+  border-color: #000000;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5rem;
+  padding: 1rem 1.5rem;
+}
+
+.btn-primary:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+  transition: all 0.5s ease-in-out;
+}
+
+/* ############################################ HEADER STYLING ############################################*/
+.header {
+  background-color: #fff;
+  /* height: 100vh; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7rem;
+}
+
+.logo {
+  height: 12rem;
+  width: 12rem;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu li {
+  font-size: 2rem;
+  display: inline;
+  padding-left: 3rem;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid #000;
+  font-weight: 600;
+}
+
+.menu a {
+  color: #000000;
+  padding-top: 2rem;
+  margin: 0.5rem;
+}
+
+.menu {
+  padding-top: 3.5rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.header-text h1 {
+  font-size: 9rem;
+}
+
+.header-text p {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.header-text a {
+  font-size: 2rem;
+}
+
+/* ############################################ SERVICES STYLING ############################################*/
+.service-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.box {
+  box-shadow: 0px 0px 10px #00000044;
+  border-radius: 25px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23%;
+  margin: 15rem auto;
+}
+
+.box:hover {
+  scale: 1.05;
+  cursor: pointer;
+  /* transition: all 0.5s linear; */
+}
+
+.box img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  margin-bottom: 3rem;
+}
+
+.box p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.box h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* ############################################ ABOUT PAGE STYLING ############################################*/
+
+.about {
+  margin-bottom: 10rem;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-content p {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-images {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem;
+  display: flex;
+}
+
+.images {
+  width: 350px;
+  height: 350px;
+}
+
+.images img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ############################################ QUOTE STYLING ############################################*/
+.quote-wrapper {
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem auto;
+  padding: 5rem 0;
+  border-radius: 10px;
+}
+
+.quote-image {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 3rem;
+}
+
+.quote-image img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.quote-content {
+  text-align: center;
+}
+
+.quote-content p {
+  font-size: 2rem;
+}
+
+/* ############################################ REVIEW PAGE STYLING ############################################*/
+
+/* ############################################ BACK TO TOP ############################################*/
+#button {
+  display: inline-block;
+  background-color: #47c972;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  z-index: 1000;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
