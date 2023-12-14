@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/b9da20f6ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Arju Techsol</title>
 </head>
 
 <body>
+
+    <!-- /* ############################################ HEADER PAGE ############################################*/ -->
+
     <header class="header container">
         <nav class="navbar">
             <a href="index.html" class="logo">
-                <img src="./Images/Arju Techsol logo-01.png" alt="LOGO" />
+                <img src="./Images/Arju Techsol logo-01.png" alt="ARJU LOGO" />
             </a>
 
             <div class="menu">
@@ -35,7 +39,7 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, ab
                     cupiditate! Doloremque, sed! Repellendus, voluptate.
                 </p>
-                <a href="#Shop" class="btn-primary">Visit Shop</a>
+                <a href="shop.html" class="btn-primary" target="_blank">Visit Shop</a>
             </div>
 
             <div class="empty-div">
@@ -44,12 +48,13 @@
         </div>
     </header>
 
+    <!-- /* ############################################ SERVICES PAGE ############################################*/ -->
 
     <section class="services container" id="Services">
         <div class="service-boxes">
             <div class="box">
                 <img src="./Images/img1.png" alt="" />
-                <h2>Service 1</h2>
+                <h2>Local Business</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
                     voluptas?
@@ -57,7 +62,7 @@
             </div>
             <div class="box">
                 <img src="./Images/img2.png" alt="" />
-                <h2>Service 2</h2>
+                <h2>Offline Store</h2>
                 <p>
                     Lorem ipsum dolor sit adipisicing Lorem ipsum amet consectetur elit.
                     Velit, voluptas?
@@ -81,6 +86,8 @@
             </div>
         </div>
     </section>
+
+    <!-- /* ############################################ ABOUT PAGE ############################################*/ -->
 
     <section class="about" id="About">
         <div class="about-wrapper container">
@@ -118,6 +125,7 @@
         </div>
     </section>
 
+    <!-- /* ############################################ QUOTE PAGE ############################################*/ -->
 
     <div class="quote container">
 
@@ -136,50 +144,215 @@
 
     </div>
 
-    <section class="review" id="Reviews">
+    <!-- /* ############################################ WHY US PAGE ############################################*/ -->
+    <section class="why-us">
 
-        <div class="review-wrapper container">
+        <div class="why-us-wrapper container">
 
-            <div class="review-card">
-                <div class="review-card-image">
-                    <img src="./Images/img1.png" alt="">
-                </div>
-                <div class="review-card-content">
-                    <h2>Customer Service</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quasi.
-                    </p>
-                </div>
+            <h1>Our Values</h1>
+            <p class="para">A team is like a family, we work together day-in and day-out to touch the lives and businesses of others. For this you need a common understanding and values.</p>
+
+            <div class="reasons">
+                <i class="fa-regular fa-face-smile fa-2x"></i>
+                <p>It Is Always <span>People First.</span> The Brainstorm Force family and customer happiness is our number one priority.</p>
             </div>
 
-            <div class="review-card">
-                <div class="review-card-image">
-                    <img src="./Images/img1.png" alt="">
-                </div>
-                <div class="review-card-content">
-                    <h2>Customer Service</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quasi.
-                    </p>
-                </div>
+            <div class="reasons">
+                <i class="fa-regular fa-heart fa-2x"></i>
+                <p><span>Empathy</span> — We empathy our colleagues, customers and all stakeholders at Brainstorm Force. We understand and share the feelings of another. Trust, loyalty and relationships are utmost important to us.</p>
             </div>
 
-            <div class="review-card">
-                <div class="review-card-image">
-                    <img src="./Images/img1.png" alt="">
-                </div>
-                <div class="review-card-content">
-                    <h2>Customer Service</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quasi.
-                    </p>
-                </div>
+            <div class="reasons">
+                <i class="fa-regular fa-star fa-2x"></i>
+                <p>
+                    <span>Quality</span> — Focus on stability and reliability. Your business is important and any bugs can impact your brand image. We are laser focused on delivering the best quality.</p>
             </div>
 
+            <div class="reasons">
+                <i class="fa-regular fa-paper-plane fa-2x"></i>
+                <p><span>Never Settle</span> — We believe there is always a better way.</p>
+            </div>
+
+            <div class="reasons">
+                <i class="fa-regular fa-hand-peace fa-2x"></i>
+                <p><span>Have Fun</span> — Strive to make things purposeful and intuitive. Everything we do should be rewarding and enjoyable.</p>
+            </div>
+
+            <h1 style="margin-top: 15rem;">What Our Clients Says</h1>
 
         </div>
 
     </section>
+    
+
+    <!-- /* ############################################ REVIEWS PAGE ############################################*/ -->
+
+    <section class="review" id="Reviews">
+
+        <!-- ################ REVIEW WRAPPER ################### -->
+
+        <div class="review-wrapper container">
+
+            <!-- ################ REVIEW CARD ################### -->
+
+            <div class="review-card">
+                <div class="review-card-image">
+                    <img src="./Images/customer1.jpg" alt="">
+                </div>
+                <div class="review-card-content">
+                    <h2>Satoru Gojo</h2>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur dolor sit ipsum dolor sit amet consectetur amet consectetur adipisicing elit. adipisicing
+                        elit. Quisquam, quasi.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ################ REVIEW CARD ################### -->
+
+            <div class="review-card">
+                <div class="review-card-image">
+                    <img src="./Images/customer2.jpg" alt="">
+                </div>
+                <div class="review-card-content">
+                    <h2>Maria Engelsen</h2>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor consectetur adipisicing elit. sit amet consectetur adipisicing elit. Quisquam, quasi. consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ################ REVIEW CARD ################### -->
+
+            <div class="review-card">
+                <div class="review-card-image">
+                    <img src="./Images/customer3.jpg" alt="">
+                </div>
+                <div class="review-card-content">
+                    <h2>Levy Ackerman</h2>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor sit amet consectetur Quisquam, quasi.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ################ REVIEW CARD ################### -->
+
+            <div class="review-card">
+                <div class="review-card-image">
+                    <img src="./Images/customer4.jpg" alt="">
+                </div>
+                <div class="review-card-content">
+                    <h2>Ben Beckman</h2>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor sit amet consectetur Quisquam, quasi.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <!-- /* ############################################ CONTACT PAGE ############################################*/ -->
+
+    <section class="contact-page" id="Contact">
+
+        <div class="contact-wrapper container">
+
+            <div class="contact-info">
+                <h1>Contact Us</h1>
+                <p>We are open for any suggestions or just to have a great chat</p>
+                <div class="contact-details">
+                    <div class="details">
+                        <i class="fas fa-map-marker-alt fa-3x"></i>
+                        <h2>Address</h2>
+                    </div>
+                    <p>G7/4, MIDC, Mirjole, Ratnagiri, Maharashtra (India) - 415639</p>
+
+                    <div class="details">
+                        <i class="fas fa-phone fa-3x"></i>
+                        <h2>Phone No</h2>
+                    </div>
+                    <p>+91 8767280515 / +91 7972790255</p>
+
+                    <div class="details">
+                        <i class="fas fa-envelope fa-3x"></i>
+                        <h2>Email</h2>
+                    </div>
+                    <p>arjutechsol1@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h1>Message Us</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="50" rows="10" placeholder="Give your suggestions"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- /* ############################################ FOOTER PAGE ############################################*/ -->
+
+    <footer class="footer">
+
+        <div class="social-media">
+            
+            <a href="https://www.facebook.com/arju.techsol" target="_blank"><i class="fab fa-brands fa-facebook fa-4x"></i></a>
+            <a href="https://www.facebook.com/arju.techsol" target="_blank"><i class="fab fa-brands fa-linkedin fa-4x"></i></a>
+            <a href="https://www.instagram.com/arju.techsol/" target="_blank"><i class="fab fa-brands fa-instagram fa-4x"></i></a>
+            <a href="https://www.instagram.com/arju.techsol/" target="_blank"><i class="fab fa-brands fa-youtube fa-4x"></i></i></a>
+            
+        </div>
+
+        <p>Copyright &copy; 2023 Arju Techsol Pvt. Ltd. - All Rights Reserved</p>
+
+    </footer>
 
 
     <button id="button" onclick="topFunction()"></button>
