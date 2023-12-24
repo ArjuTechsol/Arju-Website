@@ -28,19 +28,19 @@
 
         <nav>
 
-                <ul class="nav-bar">
-                    <li class="logo"><a href="#"><img src="./Images/Arju Techsol logo-01.png" alt="Arju Logo"></a></li>
-                    <input type="checkbox" id="check">
-                    <span class="menu">
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#Services">Services</a></li>
-                        <li class="review-menu"><a href="#Reviews">Reviews</a></li>
-                        <li><a href="#Contact">Contact</a></li>
-                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                    </span>
-                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-                </ul>
+            <ul class="nav-bar">
+                <li class="logo"><a href="#"><img src="./Images/Arju Techsol logo-01.png" alt="Arju Logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li class="review-menu"><a href="#Reviews">Reviews</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
 
         </nav>
 
@@ -560,16 +560,18 @@
                 <form id="contactForm" netlify>
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Enter name" autocomplete="off" required>
+                        <input type="text" name="name" id="name" placeholder="Enter name" autocomplete="off" required
+                            style="font-family: inherit;">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" placeholder="Enter email address" autocomplete="off"
-                            required>
+                            required style="font-family: inherit;">
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="50" rows="10" required></textarea>
+                        <textarea name="message" id="message" cols="50" rows="10" placeholder="Give any suggestions"
+                            required style="font-family: inherit;"></textarea>
                     </div>
                     <div class="form-group">
                         <input type="submit">
@@ -609,4 +611,3 @@
 </body>
 
 </html>
-

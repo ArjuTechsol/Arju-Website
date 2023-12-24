@@ -523,17 +523,18 @@ p {
 .profile-image {
   height: 60px;
   width: 60px;
+  border-radius: 100%;
 }
 
 .profile-image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
   border-radius: 100%;
+  object-fit: cover;
 }
 
 .rating-image {
-  color: rgb(201, 171, 0);
+  color: #d8b800;
 }
 
 .review-card:last-child {
@@ -667,7 +668,8 @@ textarea {
 
 #responseContainer {
   font-size: 2rem;
-  color: red;
+  font-weight: 500;
+  color: #079637;
 }
 
 /* ############################################ FOOTER PAGE SYTLING ############################################*/
