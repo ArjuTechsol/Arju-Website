@@ -113,13 +113,13 @@ function updateSlider() {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Make a GET request to the backend API endpoint
-fetch("/api/data")
-  .then((response) => response.json())
-  .then((data) => {
-    // Log the data received from the server
-    console.log(data);
+// // Make a GET request to the backend API endpoint
+// fetch("/api/data")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     // Log the data received from the server
+//     console.log(data);
 
-    // Update your UI or perform other actions with the data
-  })
-  .catch((error) => console.error("Error:", error));
+//     // Update your UI or perform other actions with the data
+//   })
+//   .catch((error) => console.error("Error:", error));

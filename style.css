@@ -166,7 +166,7 @@ p {
 }
 
 .header-text h1 {
-  font-size: 9rem;
+  font-size: 7rem;
   margin-bottom: 2.5rem;
   /* background: linear-gradient(to right, #176917, #8ad697);
   -webkit-background-clip: text;
@@ -794,6 +794,10 @@ textarea {
     right: 0;
   }
 
+  .review-menu{
+    display: none;
+  }
+
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ABOUT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
   .about-images {
     flex-direction: column;
@@ -822,6 +826,14 @@ textarea {
     width: 50px;
     object-fit: cover;
   }
+
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  QUOTE PAGE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+  .quote-wrapper{
+    margin: 0 2rem;
+  }
+  
+
 
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ REVIEWS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
   #Reviews {
@@ -872,7 +884,130 @@ textarea {
 
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ BUTTON @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
   #button {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
   }
+}
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ FOR TABS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ FOR TABS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ FOR TABS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ FOR TABS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ FOR TABS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+@media only screen and ((min-width: 600px) and (max-width: 1150px)){
+  html{
+    font-size: 40%;
+  }
+
+  body{
+    min-height: 100vh;
+  }
+
+  .container{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+
+  .header-content{
+    display: inline-block;
+  }
+
+
+  .header-text{
+    margin-top: 8rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: #fff;
+    transition: all 0.8s ease-in-out;
+  }
+
+  .menu li {
+    margin-top: 10rem;
+  }
+
+  .menu li a {
+    font-size: 4rem;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+
+  #check:checked ~ .menu {
+    right: 0;
+  }
+
+  .about-images {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+
+  .service-boxes {
+    justify-content: space-evenly;
+  }
+
+  .box {
+    min-height: 280px;
+    margin: 5rem 0.2rem;
+  }
+
+  .box img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+  }
+
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ABOUT PAGE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+  .about-content p{
+    font-size: 2.5rem;
+  }
+
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  SERVICES PAGE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+  .box p{
+    font-size: 2.7rem;
+  }
+
+
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  QUOTE PAGE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+  .quote-wrapper{
+    padding: 0 10rem;
+  }
+
+
+
+  
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  QUOTE PAGE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+  .quote-wrapper{
+    padding: 4rem 30rem;
+  } 
+
+
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ BUTTON @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+  #button {
+    width: 30px;
+    height: 30px;
+  }
+
 }
