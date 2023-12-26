@@ -72,12 +72,13 @@ p {
 .header {
   height: 100vh;
   /* width: 90%; */
+  color: #fff;
   margin: 0 auto;
   padding: 0 15rem;
   background-color: #ffffff;
-  background-image: linear-gradient(0deg, #7aeb7a 0%, #a5e2fa);
-  /* background-attachment: fixed;
-  background-size: cover; */
+  background-image: url('./Images/pexels-cátia-matos-1072179.jpg');
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ NAVBAR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -109,6 +110,7 @@ p {
 }
 .menu li a {
   display: inline-block;
+  color: #fff;
   font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -122,7 +124,7 @@ p {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #000;
+  background-color: #ffffff;
   transition: 0.15s ease-in-out;
 }
 
@@ -133,7 +135,7 @@ p {
 .open-menu,
 .close-menu {
   position: absolute;
-  color: #000;
+  color: #ffffff;
   cursor: pointer;
   display: none;
 }
@@ -168,6 +170,7 @@ p {
 .header-text h1 {
   font-size: 7rem;
   margin-bottom: 2.5rem;
+  color: #fff;
   /* background: linear-gradient(to right, #176917, #8ad697);
   -webkit-background-clip: text;
   color: transparent; */
@@ -175,6 +178,7 @@ p {
 
 .header-text p {
   font-size: 2.5rem;
+  color: #fff;
   margin-bottom: 4rem;
 }
 
@@ -646,7 +650,7 @@ input[type="submit"] {
   width: 100%;
   background-color: #47c972;
   color: #000;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
