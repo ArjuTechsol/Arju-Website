@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #efefef;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 0.05rem;
+}
+
+/* ############################################ UTILITY CLASSES ############################################*/
+/* ############################################ UTILITY CLASSES ############################################*/
+/* ############################################ UTILITY CLASSES ############################################*/
+.more-services{
+  width: 100%;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta {
+  font-family: inherit;
+  border: none;
+  background: none;
+  font-weight: 700;
+  margin-bottom: 5rem;
+  align-items: center;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  font-size: 1.5rem;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+/* ############################################ UTILITY CLASSES ############################################*/
+/* ############################################ UTILITY CLASSES ############################################*/
+/* ############################################ UTILITY CLASSES ############################################*/
+.container {
+  /* border: 2px solid black; */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  color: #000000;
+  background-color: #0b88b9;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5rem;
+  padding: 1rem 1.5rem;
+}
+
+.btn-primary:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+  transition: all 0.5s ease-in-out;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ NAVBAR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed; */
+  background-color: #efefef;
+  box-shadow: 0px 10px 20px #0000001c;
+  z-index: 999;
+  padding: 0 8rem;
+  opacity: 0.9;
+}
+
+.logo {
+  height: 70px;
+  width: 70px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  padding-left: 5rem;
+}
+.menu li a {
+  display: inline-block;
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  color: #000;
+  background-color: #000000;
+  transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after {
+  width: 100%;
+}
+
+.open-menu,
+.close-menu {
+  position: absolute;
+  color: #000000;
+  cursor: pointer;
+  display: none;
+}
+
+.open-menu {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 4rem;
+}
+
+.close-menu {
+  top: 30px;
+  right: 20px;
+  font-size: 6rem;
+}
+
+#check {
+  display: none;
+}
+
+/* ############################################ FOOTER PAGE SYTLING ############################################*/
+/* ############################################ FOOTER PAGE SYTLING ############################################*/
+/* ############################################ FOOTER PAGE SYTLING ############################################*/
+
+.hero{
+    height: 100vh;
+}
+
+
+.hero h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  text-align: left;
+  margin: 3rem 0;
+  border-bottom: 1px solid black;
+}
+
+.service-info {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.info-image {
+  height: 400px;
+  min-width: 45%;
+  padding-top: 2rem;
+}
+
+.info-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ############################################ FOOTER PAGE SYTLING ############################################*/
+/* ############################################ FOOTER PAGE SYTLING ############################################*/
+/* ############################################ FOOTER PAGE SYTLING ############################################*/
+.footer {
+  background-color: #1c1f1c;
+  padding: 2rem;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+.footer p {
+  color: #f4f4f4;
+}
+
+.social-media i {
+  margin: 2rem;
+}
+
+.social-media a {
+  color: #fff;
+}
+
+.social-media a:hover {
+  color: #47c972;
+}
