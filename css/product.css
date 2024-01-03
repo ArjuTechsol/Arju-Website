@@ -83,10 +83,18 @@ button:hover {
 
 /* ############################################ UTILITY CLASSES ############################################*/
 /* ############################################ UTILITY CLASSES ############################################*/
+.products-page-heading {
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 3rem;
+}
+
+
+
 .product-card {
   border: 2px solid black;
   width: 100%;
-  margin-top: 12rem;
+  margin-top: 5rem;
   padding: 3rem;
   display: flex;
   justify-content: space-around;
@@ -102,17 +110,24 @@ button:hover {
 }
 
 .other-images {
-  /* border: 2px solid blue; */
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
   gap: 0.7rem;
 }
 
+.other-images img:hover{
+  cursor: pointer;
+}
+
 .main-image {
   /* border: 2px solid red; */
   height: 300px;
   width: 300px;
+}
+
+.main-image:hover{
+  cursor: pointer;
 }
 
 .product {

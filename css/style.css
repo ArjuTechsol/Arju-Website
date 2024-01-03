@@ -294,10 +294,11 @@ header {
   justify-content: space-between;
   width: 23%;
   margin: 15rem auto;
+  transition: all .4s ease-out;
 }
 
 .box:hover {
-  scale: 1.009;
+  scale: 1.03;
   box-shadow: 0px 10px 10px #0000005d;
   color: #ffffff;
   background-color: #47c972;
@@ -678,6 +679,7 @@ input[type="tel"] {
 
 .social-media a {
   color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
 .social-media a:hover {
