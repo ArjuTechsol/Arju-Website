@@ -162,13 +162,13 @@ button:hover {
 .product img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .main-image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .product-images img {

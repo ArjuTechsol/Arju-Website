@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Background</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        #changingDiv {
+            width: 80vw;
+            height: 80vh;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* font-size: 24px; */
+            color: #fff;
+            font-weight: bolder;
+            transition: background 1s ease-in-out;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="changingDiv">
+        <h1>Background Changing Div</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio debitis odit, eveniet molestiae rerum maxime voluptatibus nesciunt quae consectetur officia!</p>
+    </div>
+
+    <script>
+        // Get the div element
+        const changingDiv = document.getElementById('changingDiv');
+
+        // Array of image URLs
+        const backgroundImages = [
+            'url("https://images.unsplash.com/photo-1682687218608-5e2522b04673?q=80&w=1675&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+            'url("https://images.unsplash.com/photo-1704026438453-fde2ceb923ad?q=80&w=1636&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+            'url("https://images.unsplash.com/photo-1704391975148-7089dce8e13e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'
+            // Add more image URLs as needed
+        ];
+
+        // Function to change the background image  
+        function changeBackground() {
+            const randomImage = backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
+            changingDiv.style.backgroundImage = randomImage;
+        }
+
+        // Change the background every 3 seconds (adjust the interval as needed)
+        setInterval(changeBackground, 3000);
+    </script>
+
+</body>
+
+</html>

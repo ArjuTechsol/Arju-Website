@@ -1,24 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- stylesheet for font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/b9da20f6ee.js" crossorigin="anonymous" async></script>
+
+    <!-- favicon -->
+    <link rel="icon" href="./Images/Arju Techsol logo Colour 32X32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../Images/Arju Techsol logo Colour 32X32.png" type="image/x-icon">
+
+    <!-- main style sheet  -->
     <link rel="stylesheet" href="./css/shop.css">
-    <script src="script2.js"></script>
-    <title>Arju Techsol | Shop</title>
+    <link rel="stylesheet" href="./css/media.css">
+
+    <!-- Locomotive css style sheet  -->
+    <link rel="stylesheet" href="./css/loco.css">
+
+    <!-- locomotive javascript file -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
+
+    <!-- main javascript file -->
+    <script src="./javascripts/script.js" defer></script>
+    
+    <!-- GSAP Animations -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <!-- other functionality javascript files -->
+    <script src="./javascripts/backToTop.js" defer></script>
+    
+    <!-- other functionality javascript files -->
+    <script src="./javascripts/gsap.js"></script>
+    <!-- <script src="./javascripts/background.js" defer></script> -->
+
+    <!-- title  -->
+    <title>Shop | Arju</title>
 </head>
-
 <body>
-    <center>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./Images/Arju Techsol logo-01.png" alt="">
+            </div>
 
-        <h1>Welcome to Arju Techsol Shop</h1>
-        <p>We are currently working hard on this website</p>
-        <p>to bring you the platform where you can purchase our products</p>
-        <p>But Currently this section is under developement process...</p>
-        <a href="./index.html" class="btn-primary">Return to home page</a>
+            <div class="nav-items">
+                <ul>
+                    <li class="nav-menu"><a href="#">Home</a></li>
+                    <li class="nav-menu"><a href="#">Products</a></li>
+                    <li class="nav-menu"><a href="#">Contact</a></li>
+                </ul>
+            </div>
 
-    </center>
+            <div class="account">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <section class="landing-page" id="changing-div">
+
+            <div class="header-content">
+                <h1>Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur ab quas quaerat, quam recusandae. Repellat tenetur quaerat natus in!</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
 </body>
-
 </html>
