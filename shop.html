@@ -26,52 +26,328 @@
     <script src="./javascripts/script.js" defer></script>
     
     <!-- GSAP Animations -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- other functionality javascript files -->
     <script src="./javascripts/backToTop.js" defer></script>
     
     <!-- other functionality javascript files -->
-    <script src="./javascripts/gsap.js"></script>
     <!-- <script src="./javascripts/background.js" defer></script> -->
 
     <!-- title  -->
     <title>Shop | Arju</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <img src="./Images/Arju Techsol logo-01.png" alt="">
-            </div>
-
-            <div class="nav-items">
-                <ul>
-                    <li class="nav-menu"><a href="#">Home</a></li>
-                    <li class="nav-menu"><a href="#">Products</a></li>
-                    <li class="nav-menu"><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="account">
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="#"><i class="fa-solid fa-user"></i></a>
-            </div>
-        </nav>
-    </header>
+    
 
     <main id="main">
 
-        <section class="landing-page" id="changing-div">
+        <section class="landing-page">
+
+            <header class="header">
+                <nav class="navbar">
+                    <div class="logo">
+                        <img src="./Images/Arju Techsol logo-01.png" alt="">
+                    </div>
+        
+                    <div class="nav-items">
+                        <ul>
+                            <li class="nav-menu"><a href="#">Home</a></li>
+                            <li class="nav-menu"><a href="#">Products</a></li>
+                            <li class="nav-menu"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="account">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                </nav>
+            </header>
 
             <div class="header-content">
-                <h1>Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
+                <h1>Lorem, ipsum dolor sit amet consectetur.</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur ab quas quaerat, quam recusandae. Repellat tenetur quaerat natus in!</p>
+                <div class="wrapper">
+                    <form class="search">
+                      <input type="text" class="searchText" placeholder="Find our products">
+                      <input type="submit" class="searchButton" value="search" disabled ></input>
+                    </form>
+                  </div>
             </div>
 
         </section>
 
+        <section class="products-section container">
+
+            <h2 class="main-headings">Featured Products</h2>
+
+            <div class="featured-Products container">
+
+
+                <a href="./Products/footwear.html">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="./Images/Footwear.png" alt="Footwear Image">
+                        </div>
+    
+                        <div class="product-details">
+                            <h3 class="product-heading">Footwear</h3>
+                            <p class="product-price">
+                                <span class="cut-price">&#8377; 150.00</span>
+                                <br>
+                                <span class="real-price">&#8377; 120.00</span>
+                            </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="./Products/tshirt.html">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="./Images/T-shirts printing.png" alt="Footwear Image">
+                        </div>
+    
+                        <div class="product-details">
+                            <h3 class="product-heading">Printed T-shirt</h3>
+                            <p class="product-price">
+                                <span class="cut-price">&#8377; 599</span>
+                                <br>
+                                <span class="real-price">&#8377; 399</span>
+                            </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="./Products/wooven.html">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="./Images/Wooven Bag.png" alt="Footwear Image">
+                        </div>
+    
+                        <div class="product-details">
+                            <h3 class="product-heading">Wooven Bags</h3>
+                            <p class="product-price">
+                                <span class="cut-price">&#8377; 199.00</span>
+                                <br>
+                                <span class="real-price">&#8377; 169.00</span>
+                            </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="./Products/scrubber.html">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="./Images/scrubber 22.png" alt="Footwear Image">
+                        </div>
+    
+                        <div class="product-details">
+                            <h3 class="product-heading">Scrubber</h3>
+                            <p class="product-price">
+                                <span class="cut-price">&#8377; 159.00</span>
+                                <br>
+                                <span class="real-price">&#8377; 99.00</span>
+                            </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="./Products/papercup.html">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="./Images/paper cup.png" alt="Footwear Image">
+                        </div>
+    
+                        <div class="product-details">
+                            <h3 class="product-heading">Paper Cup</h3>
+                            <p class="product-price">
+                                <span class="cut-price">&#8377; 255.00</span>
+                                <br>
+                                <span class="real-price">&#8377; 175.00</span>
+                            </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="./Products/candle.html">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="./Images/candle mock up.png" alt="Footwear Image">
+                        </div>
+    
+                        <div class="product-details">
+                            <h3 class="product-heading">Candles</h3>
+                            <p class="product-price">
+                                <span class="cut-price">&#8377; 159.00</span>
+                                <br>
+                                <span class="real-price">&#8377; 129.00</span>
+                            </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="./Products/floating.html">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="./Images/Floating candle.png" alt="Footwear Image">
+                        </div>
+    
+                        <div class="product-details">
+                            <h3 class="product-heading">Floatinf Candles</h3>
+                            <p class="product-price">
+                                <span class="cut-price">&#8377; 75.00</span>
+                                <br>
+                                <span class="real-price">&#8377; 50.00</span>
+                            </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+            </div>
+
+            
+
+        </section>
+
+        <section class="featured">
+            <div class="limited-Offer">
+                <div class="offer-content">
+                    <div class="content-box">
+                        <p class="offer">
+                            Limited Time Offer
+                        </p>
+                        <h3>
+                            Special Edition
+                        </h3>
+                        <p class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                            mattis, pulvinar dapibus leo.
+                        </p>
+                        <p class="offer">
+                            Buy This T-shirt At 20% Discount, Use Code OFF20
+                        </p>
+                        <button>shop now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="info">
+
+                <div class="info-section">
+                    <img
+                        src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/globe-free-img.png">
+    
+                    <h3>Worldwide Shipping</h3>
+                    <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+    
+                </div>
+                <div class="info-section">
+                    <img
+                        src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/quality-free-img.png">
+    
+                    <h3>Best Quality</h3>
+                    <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+    
+                </div>
+                <div class="info-section">
+                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/tag-free-img.png">
+    
+                    <h3>Best Offers</h3>
+                    <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+    
+                </div>
+                <div class="info-section">
+                    <img
+                        src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/lock-free-img.png">
+    
+                    <h3>Secure Payments</h3>
+                    <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+    
+                </div>
+    
+            </div>
+        </section>
+
     </main>
+
+    <footer class="footer">
+
+        <div class="social-media">
+
+            <a href="https://www.facebook.com/arju.techsol" target="_blank"><i
+                    class="fab fa-brands fa-facebook fa-4x"></i></a>
+            <a href="https://www.facebook.com/arju.techsol" target="_blank"><i
+                    class="fab fa-brands fa-linkedin fa-4x"></i></a>
+            <a href="https://www.instagram.com/arju.techsol/" target="_blank"><i
+                    class="fab fa-brands fa-instagram fa-4x"></i></a>
+            <a href="https://www.instagram.com/arju.techsol/" target="_blank"><i
+                    class="fab fa-brands fa-youtube fa-4x"></i></i></a>
+
+        </div>
+
+        <p>Copyright &copy; 2023 Arju Techsol Pvt. Ltd. - All Rights Reserved</p>
+
+    </footer>
 
 
 </body>
