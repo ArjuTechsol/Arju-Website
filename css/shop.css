@@ -241,7 +241,7 @@ input {
 .product{
   width: fit-content;
   padding: 2rem;
-  border: 2px solid #00000059;
+  border: 2px solid #00000025;
   margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
@@ -254,11 +254,17 @@ input {
   height: 300px;
   width: 300px;
   margin-bottom: 2rem;
+  overflow: hidden;
 }
 
 .product-image img{
   height: 100%;
   width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-image img:hover{
+  scale: 1.2;
 }
 
 
@@ -359,6 +365,73 @@ section .limited-Offer .offer-content .content-box button:hover {
   background: #000;
   color: #fff;
 }
+
+
+
+/* ############################################ OFFER SECTION ############################################*/
+/* ############################################ OFFER SECTION ############################################*/
+/* ############################################ OFFER SECTION ############################################*/
+/* ############################################ OFFER SECTION ############################################*/
+/* ############################################ OFFER SECTION ############################################*/
+
+.limited-time{
+  padding: 2rem 4rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.offer-content1{
+  max-width: 500px;
+}
+
+.offer-content1 p{
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.offer-content1 h2,h3{
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.offer-content1 button{
+  border: none;
+  outline: none;
+  width: 12rem;
+  text-transform: uppercase;
+  padding: 10px 0px;
+  margin-top: 2rem;
+  cursor: pointer;
+  font-weight: 700;
+  background: #000000;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.offer-content1 button:hover{
+  background-color: #a0a0a0;
+  color: #000;
+}
+
+.offer-image{
+  height: 300px;
+  width: 300px;
+}
+
+.offer-image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+
 
 
 /* ############################################ INFO SECTION ############################################*/
