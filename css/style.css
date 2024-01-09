@@ -207,6 +207,8 @@ nav{
 
 
 
+
+
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ HEADER CONTENT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 .header-content {
   position: absolute;
@@ -228,6 +230,7 @@ nav{
 .lg-heading {
   font-size: 7rem;
   margin-bottom: 2rem;
+  overflow: hidden;
 }
 
 .header-text p {
@@ -257,6 +260,7 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .about-content p {
@@ -292,6 +296,11 @@ nav{
 /* ############################################ SERVICES STYLING ############################################*/
 /* ############################################ SERVICES STYLING ############################################*/
 
+.overflow{
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+}
 
 
 .service-boxes {
@@ -302,6 +311,7 @@ nav{
 }
 
 .box {
+  box-shadow: 0px 0px 5px #00000028;
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
@@ -310,6 +320,7 @@ nav{
   width: 23%;
   margin: 15rem auto;
   transition: all .4s ease-out;
+  overflow: hidden;
 }
 
 .box:hover {

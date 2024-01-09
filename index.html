@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- locomotive javascript  -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
+
     <!-- stylesheet for font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://kit.fontawesome.com/b9da20f6ee.js" crossorigin="anonymous" async></script>
@@ -15,24 +18,14 @@
 
     <!-- main style sheet  -->
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/media.css">
-    <!-- <link rel="stylesheet" href="./css/loco.css"> -->
-
-    <!-- locomotive javascript file -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
-
-    <!-- main javascript file -->
-    <script src="./javascripts/script.js" defer></script>
+    <link rel="stylesheet" href="./css/media.css" />
     
-    <!-- GSAP Animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- locomotive style sheet  -->
+    <link rel="stylesheet" href="./css/loco.css">
 
 
     <!-- other functionality javascript files -->
     <script src="./javascripts/backToTop.js" defer></script>
-    
-    <!-- other functionality javascript files -->
-    <script src="./javascripts/gsap.js"></script>
 
     <!-- title  -->
     <title>Arju Techsol</title>
@@ -51,11 +44,11 @@
                 </li>
                 <input type="checkbox" id="check">
                 <span class="menu">
-                    <li class="nav-items"><a href="#Home">Home</a></li>
-                    <li class="nav-items"><a href="#About">About</a></li>
-                    <li class="nav-items"><a href="#Services">Services</a></li>
-                    <li class="nav-items"><a href="#Reviews">Reviews</a></li>
-                    <li class="nav-items"><a href="#Contact">Contact Us</a></li>
+                    <li class="nav-items home"><a href="#Home">Home</a></li>
+                    <li class="nav-items about"><a href="#About">About</a></li>
+                    <li class="nav-items serv"><a href="#Services">Services</a></li>
+                    <li class="nav-items rev"><a href="#Reviews">Reviews</a></li>
+                    <li class="nav-items con"><a href="#Contact">Contact Us</a></li>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
@@ -108,13 +101,13 @@
 
                 <div class="about-images">
 
-                    <div class="images">
+                    <div class="images image1">
                         <img src="./Images/about1.jpg" loading="lazy" alt="About Image 1">
                     </div>
-                    <div class="images">
+                    <div class="images image2">
                         <img src="./Images/about2.jpg" loading="lazy" alt="About Image 2">
                     </div>
-                    <div class="images">
+                    <div class="images image3">
                         <img src="./Images/about3.jpg" loading="lazy" alt="About image 3">
                     </div>
 
@@ -131,7 +124,9 @@
             <div class="service-boxes">
                 <div class="box">
                     <img src="./Images/img1.png" loading="lazy" alt="Service Image 1" />
-                    <h2>Service 1</h2>
+                    <div class="overflow">
+                        <h2>Service 1</h2>
+                    </div>
                     <p>
                         Lorem ipsum dolor, sit amet elit. Velit, voluptas?sit amet consectetur Velit,
                         adipisicing
@@ -154,7 +149,9 @@
                 </div>
                 <div class="box">
                     <img src="./Images/img2.png" loading="lazy" alt="Service Image 2" />
-                    <h2>Service 2</h2>
+                    <div class="overflow">
+                        <h2>Service 2</h2>
+                    </div>
                     <p>
                         Lorem ipsum dolor, sit amet elit. Velit, voluptas?sit amet consectetur Velit,
                         adipisicing
@@ -177,7 +174,9 @@
                 </div>
                 <div class="box">
                     <img src="./Images/img3.png" loading="lazy" alt="Service Image 3" />
-                    <h2>Service 3</h2>
+                    <div class="overflow">
+                        <h2>Service 3</h2>
+                    </div>
                     <p>
                         Lorem ipsum dolor, sit amet elit. Velit, voluptas?sit amet consectetur Velit,
                         adipisicing
@@ -200,7 +199,9 @@
                 </div>
                 <div class="box">
                     <img src="./Images/img4.png" loading="lazy" alt="Service Image 4" />
-                    <h2>Service 4</h2>
+                    <div class="overflow">
+                        <h2>Service 4</h2>
+                    </div>
                     <p>
                         Lorem ipsum dolor, sit amet elit. Velit, voluptas?sit amet consectetur Velit,
                         adipisicing
@@ -514,6 +515,17 @@
         <p>Copyright &copy; 2023 Arju Techsol Pvt. Ltd. - All Rights Reserved</p>
 
     </footer>
+
+
+    <!-- GSAP Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- GSAP javascript files -->
+    <script src="./javascripts/gsap.js"></script>
+
+
+    <!-- main javascript file -->
+    <script src="./javascripts/script.js" defer></script>
 
 </body>
 
