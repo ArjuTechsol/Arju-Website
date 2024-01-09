@@ -45,6 +45,7 @@ p {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .btn-primary {
@@ -495,6 +496,7 @@ span:hover {
 .reasons {
   display: flex;
   gap: 1rem;
+  overflow: hidden;
 }
 
 /* ############################################ REVIEW PAGE STYLING ############################################*/
@@ -508,6 +510,7 @@ span:hover {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-bottom: 2rem;
+  overflow: hidden;
 }
 
 .review-card {

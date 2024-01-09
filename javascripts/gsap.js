@@ -60,7 +60,7 @@ window.onload = function () {
     
     gsap.from(".image3", {
         x: 900,
-        duration: 1
+        duration: 1,
     })
     
     
@@ -78,7 +78,112 @@ window.onload = function () {
 
     gsap.from(".see-more span", {
         x: -100,
-        opacity: 0  
+        opacity: 0 ,
+    })
+
+
+    var tl2 = gsap.timeline();
+
+    tl2.from(".re1 p", {
+        y: -100,
+        duration: 0.3,
+        ease: "power4.InOut"
+    })
+
+    tl2.from(".re2 p", {
+        y: -100,
+        duration: 0.3,
+        ease: "power4.InOut"
+    })
+
+    tl2.from(".re3 p", {
+        y: -100,
+        duration: 0.3,
+        ease: "power4.InOut"
+    })
+
+    tl2.from(".re4 p", {
+        y: -100,
+        duration: 0.3,
+        ease: "power4.InOut"
+    })
+
+    tl2.from(".re5 p", {
+        y: -100,
+        duration: 0.3,
+        ease: "power4.InOut"
+    })
+
+
+    var tl3 = gsap.timeline();
+
+    tl3.from(".re1 i", {
+        x: -100,
+        duration: 0.3,
+        ease: "power4.InOut"
+    })
+
+    tl3.from(".re2 i", {
+        x: -100,
+        duration: 0.3,
+        ease: "power4.InOut"
+    })
+
+    tl3.from(".re3 i", {
+        x: -100,
+        duration: 0.3,
+        ease: "power4.InOut"
+    })
+
+    tl3.from(".re4 i", {
+        x: -100,
+        duration: 0.3,
+        ease: "power4.InOut"
+    })
+
+    tl3.from(".re5 i", {
+        x: -100,
+        duration: 0.3,
+        ease: "power4.InOut"
+    })
+
+
+    var tl4 = gsap.timeline();
+
+    tl4.from(".rc1", {
+        x: -9000,
+        duration: 0.4,
+        ease: "power4.InOut"
+    })
+
+    tl4.from(".rc2", {
+        x: -9000,
+        duration: 0.4,
+        ease: "power4.InOut"
+    })
+
+    tl4.from(".rc3", {
+        x: -9000,
+        duration: 0.4,
+        ease: "power4.InOut"
+    })
+
+    tl4.from(".rc4", {
+        x: -9000,
+        duration: 0.4,
+        ease: "power4.InOut"
+    })
+
+    tl4.from(".rc5", {
+        x: -9000,
+        duration: 0.4,
+        ease: "power4.InOut"
+    })
+
+    tl4.from(".rc6", {
+        x: -9000,
+        duration: 0.4,
+        ease: "power4.InOut"
     })
 
 };
