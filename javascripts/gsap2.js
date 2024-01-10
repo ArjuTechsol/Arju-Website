@@ -112,6 +112,18 @@ gsap.from(".image3", {
 
 //////////////////  GSAP ANIMATION FOR SERVICES PAGE //////////////////
 
+gsap.from(".box img", {
+    scale: 0,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".box img",
+        scroller: "body",
+        start: "top 80%",
+        end: "top 40%",
+        scrub: 1,
+    }
+})
+
 gsap.from(".box h2", {
     y: -50,
     opacity: 0,
@@ -166,3 +178,141 @@ gsap.from(".quote-wrapper", {
         scrub: 2,
     }
 })
+
+
+
+//////////////////  GSAP ANIMATION FOR VALUES PAGE //////////////////
+var tl2 = gsap.timeline();
+
+tl2.from(".re1 p", {
+    y: -100,
+    duration: 0.3,
+    ease: "power4.InOut",
+    scrollTrigger: {
+        trigger: ".why-us-wrapper",
+        scroller: "body",
+        start: "top 40%",
+        end: "top 30%",
+        scrub: 1,
+    }
+})
+tl2.from(".re2 p", {
+    y: -100,
+    duration: 0.3,
+    ease: "power4.InOut",
+    scrollTrigger: {
+        trigger: ".why-us-wrapper",
+        scroller: "body",
+        start: "top 30%",
+        end: "top 20%",
+        scrub: 1,
+    }
+})
+tl2.from(".re3 p", {
+    y: -100,
+    duration: 0.3,
+    ease: "power4.InOut",
+    scrollTrigger: {
+        trigger: ".why-us-wrapper",
+        scroller: "body",
+        start: "top 20%",
+        end: "top 10%",
+        scrub: 1,
+    }
+})
+tl2.from(".re4 p", {
+    y: -100,
+    duration: 0.3,
+    ease: "power4.InOut",
+    scrollTrigger: {
+        trigger: ".why-us-wrapper",
+        scroller: "body",
+        start: "top 10%",
+        end: "top 0%",
+        scrub: 1,
+    }
+})
+tl2.from(".re5 p", {
+    y: -100,
+    duration: 0.3,
+    ease: "power4.InOut",
+    scrollTrigger: {
+        trigger: ".why-us-wrapper",
+        scroller: "body",
+        start: "top 0%",
+        end: "top -10%",
+        scrub: 1,
+    }
+})
+
+
+//////  VALUE ICONS //////
+
+var tl3 = gsap.timeline();
+
+tl3.from(".re1 i", {
+    x: -100,
+    duration: 0.3,
+    ease: "power4.InOut",
+    scrollTrigger: {
+        trigger: ".why-us-wrapper",
+        scroller: "body",
+        start: "top 40%",
+        end: "top 30%",
+        scrub: 1,
+    }
+})
+
+tl3.from(".re2 i", {
+    x: -100,
+    duration: 0.3,
+    ease: "power4.InOut",
+    scrollTrigger: {
+        trigger: ".why-us-wrapper",
+        scroller: "body",
+        start: "top 30%",
+        end: "top 20%",
+        scrub: 1,
+    }
+})
+
+tl3.from(".re3 i", {
+    x: -100,
+    duration: 0.3,
+    ease: "power4.InOut",
+    scrollTrigger: {
+        trigger: ".why-us-wrapper",
+        scroller: "body",
+        start: "top 20%",
+        end: "top 10%",
+        scrub: 1,
+    }
+})
+
+tl3.from(".re4 i", {
+    x: -100,
+    duration: 0.3,
+    ease: "power4.InOut",
+    scrollTrigger: {
+        trigger: ".why-us-wrapper",
+        scroller: "body",
+        start: "top 10%",
+        end: "top 0%",
+        scrub: 1,
+    }
+})
+
+tl3.from(".re5 i", {
+    x: -100,
+    duration: 0.3,
+    ease: "power4.InOut",
+    scrollTrigger: {
+        trigger: ".why-us-wrapper",
+        scroller: "body",
+        start: "top 0%",
+        end: "top -10%",
+        scrub: 1,
+    }
+})
+
+
