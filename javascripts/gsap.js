@@ -4,6 +4,8 @@ window.onload = function () {
 
     //////////////////  GSAP ANIMATION FOR MAIN LANDING PAGER //////////////////
 
+    var tl = gsap.timeline();
+
     navItems.forEach((item, index) => {
         // Initial state
         tl.from(item, { 
