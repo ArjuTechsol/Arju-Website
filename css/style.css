@@ -36,6 +36,10 @@ p {
   line-height: 1.6;
   letter-spacing: 0.05rem;
 }
+/* 
+div{
+  border: 2px solid black;
+} */
 
 /* ############################################ UTILITY CLASSES ############################################*/
 /* ############################################ UTILITY CLASSES ############################################*/
@@ -575,11 +579,15 @@ span:hover {
 /* ############################################ CONTACT PAGE STYLING ############################################*/
 /* ############################################ CONTACT PAGE STYLING ############################################*/
 /* ############################################ CONTACT PAGE STYLING ############################################*/
+.contact-page{
+  background-color: #1c1f1c;
+}
+
 .contact-wrapper {
   /* border: 2px solid black; */
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
   min-height: 700px;
   border-radius: 15px;
 }
@@ -592,18 +600,21 @@ span:hover {
 }
 
 .contact-form {
+  color: #fff;
   margin: 2rem;
   padding: 5rem 2rem;
   max-width: 35%;
   border-radius: 15px;
 }
 .contact-wrapper h1 {
+  color: #fff;
   font-size: 3rem;
   text-align: center;
   margin-bottom: 5rem;
 }
 
 .contact-wrapper p {
+  color: #fff;
   font-size: 2rem;
   text-align: left;
   margin-bottom: 2rem;
@@ -619,6 +630,7 @@ span:hover {
 }
 
 .details h2 {
+  color: #fff;
   text-align: center;
   margin-left: 2rem;
   font-size: 2rem;
@@ -696,6 +708,7 @@ input[type="tel"] {
   padding: 2rem;
   text-align: center;
   color: #f4f4f4;
+  margin-bottom: 0;
 }
 
 .footer p {
