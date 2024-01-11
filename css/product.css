@@ -141,6 +141,11 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  overflow: hidden;
+}
+
+.product-details div{
+  overflow: hidden;
 }
 
 .detail {
@@ -185,6 +190,7 @@ button:hover {
   margin: 5rem auto;
   padding: 4rem;
   height: fit-content;
+  overflow: hidden;
 }
 
 .more-detail {
@@ -198,12 +204,26 @@ button:hover {
 
 .more-details {
   margin-bottom: 7rem;
+  overflow: hidden;
 }
 
 .im {
   margin: 5rem 0;
   margin-left: 17rem;
   width: 50%;
+}
+
+.detail{
+  overflow: hidden;
+}
+
+.detail div{
+  overflow: hidden;
+}
+
+
+.product-description{
+  overflow: hidden;
 }
 
 /* ############################################ ENQUIRY SECTION ############################################*/
@@ -217,6 +237,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .enquiry h1 {
