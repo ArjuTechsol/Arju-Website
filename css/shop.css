@@ -169,6 +169,8 @@ p {
   background: #ffffff0c;
   backdrop-filter: blur(2px);
   border-radius: 20px;
+
+  overflow: hidden;
 }
 
 .header-content h1{
@@ -387,6 +389,7 @@ section .limited-Offer .offer-content .content-box button:hover {
 
 .offer-content1{
   max-width: 500px;
+  overflow: hidden;
 }
 
 .offer-content1 p{
