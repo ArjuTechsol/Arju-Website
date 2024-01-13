@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -60,6 +61,8 @@ p {
   background-color: #000;
   color: #fff;
   border-color: #000;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -74,13 +77,15 @@ p {
 }
 
 .main-headings::after {
-  content: '';
+  content: "";
   background: #47c972;
   width: 100px;
   height: 4px;
   position: absolute;
   bottom: -5px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -89,18 +94,23 @@ p {
 /* ############################################ NAVBAR ############################################*/
 /* ############################################ NAVBAR ############################################*/
 /* ############################################ NAVBAR ############################################*/
-.header{
+.header {
   position: relative;
 }
-
 
 .navbar {
   /* position: absolute; */
   width: 100%;
   padding: 0 4rem;
   font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   z-index: 99999;
@@ -110,7 +120,7 @@ p {
   padding: 0.5rem 0;
   margin: 0 1rem;
   position: relative;
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 .nav-items li a::after {
@@ -122,6 +132,8 @@ p {
   height: 2px;
   color: #ffffff;
   background-color: #000000;
+  -webkit-transition: 0.15s ease-in-out;
+  -o-transition: 0.15s ease-in-out;
   transition: 0.15s ease-in-out;
 }
 
@@ -129,7 +141,7 @@ p {
   width: 100%;
 }
 
-.account i{
+.account i {
   margin-left: 2rem;
 }
 
@@ -139,54 +151,86 @@ p {
 /* ############################################ HEADER CONTENT ############################################*/
 /* ############################################ HEADER CONTENT ############################################*/
 
-
-
-.landing-page{
+.landing-page {
   /* border: 2px solid red; */
   position: relative;
   height: 100vh;
-  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(#051937),
+    color-stop(#004d7a),
+    color-stop(#008793),
+    color-stop(#00bf72),
+    to(#a8eb12)
+  );
+  background-image: -o-linear-gradient(
+    left bottom,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
   background-attachment: fixed;
   background-size: cover;
 }
 
-
-.header-content{
+.header-content {
   padding: 5rem;
   max-width: 800px;
   min-width: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
   /* for background blur card */
   background: #ffffff0c;
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   border-radius: 20px;
 
   overflow: hidden;
 }
 
-.header-content h1{
+.header-content h1 {
   font-size: 5rem;
   text-align: center;
   margin: 2rem 0;
   font-weight: 800;
 }
 
-.header-content p{
+.header-content p {
   font-size: 2rem;
   margin-bottom: 2rem;
   font-weight: 500;
 }
-
-
 
 .search {
   font-size: 0;
@@ -196,9 +240,9 @@ p {
 
 input {
   padding: 0px;
-  font-size:18px; 
+  font-size: 18px;
   height: 100%;
-  background: white; 
+  background: white;
   border: none;
 }
 
@@ -220,38 +264,39 @@ input {
   width: 80px;
 }
 
-
-
-
-
-
-
 /* ############################################ FEATURED PPRODUCTS ############################################*/
 /* ############################################ FEATURED PPRODUCTS ############################################*/
 /* ############################################ FEATURED PPRODUCTS ############################################*/
 /* ############################################ FEATURED PPRODUCTS ############################################*/
 /* ############################################ FEATURED PPRODUCTS ############################################*/
 
-.featured-Products{
+.featured-Products {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
-
-
-.product{
+.product {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 2rem;
   border: 2px solid #00000025;
   margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
-
-
-.product-image{
+.product-image {
   background-color: #dfdfdf;
   height: 300px;
   width: 300px;
@@ -259,37 +304,37 @@ input {
   overflow: hidden;
 }
 
-.product-image img{
+.product-image img {
   height: 100%;
   width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-.product-image img:hover{
+.product-image img:hover {
   scale: 1.2;
 }
 
-
-.product .product-details h3{
+.product .product-details h3 {
   font-size: 2rem;
 }
 
-
-.product-price{
+.product-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
-.product-price .cut-price{
+.product-price .cut-price {
   text-decoration: line-through;
   margin-right: 2rem;
 }
 
-.stars i{
+.stars i {
   font-size: 1.5rem;
   color: #9b8400;
 }
-
-
 
 /* ############################################ OFFER SECTION ############################################*/
 /* ############################################ OFFER SECTION ############################################*/
@@ -319,6 +364,8 @@ section .limited-Offer .offer-content .content-box {
   position: absolute;
   left: 50px;
   top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
 
@@ -360,6 +407,8 @@ section .limited-Offer .offer-content .content-box button {
   font-size: 1.1em;
   background: #fff;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -368,41 +417,50 @@ section .limited-Offer .offer-content .content-box button:hover {
   color: #fff;
 }
 
-
-
 /* ############################################ OFFER SECTION ############################################*/
 /* ############################################ OFFER SECTION ############################################*/
 /* ############################################ OFFER SECTION ############################################*/
 /* ############################################ OFFER SECTION ############################################*/
 /* ############################################ OFFER SECTION ############################################*/
 
-.limited-time{
+.limited-time {
   padding: 2rem 4rem;
   margin-bottom: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 2rem;
 }
 
-.offer-content1{
+.offer-content1 {
   max-width: 500px;
   overflow: hidden;
 }
 
-.offer-content1 p{
+.offer-content1 p {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
-.offer-content1 h2,h3{
+.offer-content1 h2,
+h3 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
-.offer-content1 button{
+.offer-content1 button {
   border: none;
   outline: none;
   width: 12rem;
@@ -413,29 +471,27 @@ section .limited-Offer .offer-content .content-box button:hover {
   font-weight: 700;
   background: #000000;
   color: #ffffff;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.offer-content1 button:hover{
+.offer-content1 button:hover {
   background-color: #a0a0a0;
   color: #000;
 }
 
-.offer-image{
+.offer-image {
   height: 300px;
   width: 300px;
 }
 
-.offer-image img{
+.offer-image img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
-
-
-
-
-
 
 /* ############################################ INFO SECTION ############################################*/
 /* ############################################ INFO SECTION ############################################*/
@@ -445,9 +501,13 @@ section .limited-Offer .offer-content .content-box button:hover {
 
 section .info {
   background: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   gap: 6rem;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 0px 100px;
   padding-bottom: 100px;
@@ -459,13 +519,14 @@ section .info .info-section {
   max-width: 200px;
 }
 
-section .info .info-section h3{
+section .info .info-section h3 {
   font-size: 2rem;
 }
 
 section .info .info-section img {
   width: 50px;
   height: 50px;
+  -o-object-fit: contain;
   object-fit: contain;
 }
 
@@ -473,8 +534,6 @@ section .info .info-section p {
   color: #333;
   font-size: 1.5rem;
 }
-
-
 
 /* ############################################ FOOTER PAGE SYTLING ############################################*/
 /* ############################################ FOOTER PAGE SYTLING ############################################*/
@@ -498,13 +557,14 @@ section .info .info-section p {
 
 .social-media a {
   color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .social-media a:hover {
   color: #47c972;
 }
-
 
 /* ############################################ BACK TO TOP ############################################*/
 /* ############################################ BACK TO TOP ############################################*/
@@ -518,6 +578,8 @@ section .info .info-section p {
   height: 50px;
   text-align: center;
   display: inline-block;
+  -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  -o-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   border-radius: 10px;
   position: fixed;
@@ -540,4 +602,3 @@ section .info .info-section p {
   /* line-height: 30px; */
   color: #fff;
 }
-  

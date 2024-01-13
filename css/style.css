@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -65,6 +66,8 @@ div{
   background-color: #000;
   color: #fff;
   border-color: #000;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -79,13 +82,15 @@ div{
 }
 
 .main-headings::after {
-  content: '';
+  content: "";
   background: #47c972;
   width: 100px;
   height: 4px;
   position: absolute;
   bottom: -5px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -99,16 +104,15 @@ div{
 /* ############################################ HEADER PAGE STYLING ############################################*/
 /* ############################################ HEADER PAGE STYLING ############################################*/
 
-#main{
+#main {
   position: relative;
 }
-
 
 header {
   /* border: 3px solid blue; */
   height: 100vh;
   /* width: 90%; */
-  color: #47c972;;
+  color: #47c972;
   margin: 0 auto;
   padding: 0 15rem;
   background-color: #ffffff;
@@ -117,24 +121,33 @@ header {
   background-size: cover;
 }
 
-.header{
+.header {
   position: relative;
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ NAVBAR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-nav{
+nav {
   /* border: 4px solid red; */
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   position: relative;
 }
 
 .nav-bar {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: fixed;
   background-color: #efefef;
+  -webkit-box-shadow: 0px 10px 20px #0000005d;
   box-shadow: 0px 10px 20px #0000005d;
   z-index: 999;
   padding: 0 8rem;
@@ -149,10 +162,13 @@ nav{
 .logo img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -178,6 +194,8 @@ nav{
   height: 2px;
   color: #000;
   background-color: #000000;
+  -webkit-transition: 0.15s ease-in-out;
+  -o-transition: 0.15s ease-in-out;
   transition: 0.15s ease-in-out;
 }
 
@@ -196,6 +214,8 @@ nav{
 .open-menu {
   top: 50%;
   right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 4rem;
 }
@@ -210,19 +230,18 @@ nav{
   display: none;
 }
 
-
-
-
-
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ HEADER CONTENT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 .header-content {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
   /* for background blur card */
   background: #ffffff0c;
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   border-radius: 20px;
   padding: 5rem;
@@ -260,10 +279,16 @@ nav{
   background-size: cover;
 } */
 
-
 .about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
 }
@@ -276,9 +301,18 @@ nav{
 
 .about-images {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 5rem;
   display: flex;
@@ -292,6 +326,7 @@ nav{
 .images img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -301,45 +336,66 @@ nav{
 /* ############################################ SERVICES STYLING ############################################*/
 /* ############################################ SERVICES STYLING ############################################*/
 
-.overflow{
+.overflow {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
 }
 
-
 .service-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: -5rem;
 }
 
 .box {
+  -webkit-box-shadow: 0px 0px 5px #00000028;
   box-shadow: 0px 0px 5px #00000028;
   padding: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 23%;
   margin: 15rem auto;
-  transition: all .4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
   overflow: hidden;
 }
 
 .box:hover {
   scale: 1.03;
+  -webkit-box-shadow: 0px 10px 10px #0000005d;
   box-shadow: 0px 10px 10px #0000005d;
   color: #ffffff;
   background-color: #47c972;
   border-radius: 25px;
 }
 
-
 .box img {
   height: 100px;
   width: 100px;
+  -o-object-fit: cover;
   object-fit: cover;
   margin-bottom: 3rem;
 }
@@ -356,10 +412,16 @@ nav{
   margin-bottom: 2rem;
 }
 
-.more-services{
+.more-services {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -369,6 +431,8 @@ nav{
   background: none;
   font-weight: 700;
   margin-bottom: 5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -382,7 +446,11 @@ nav{
 }
 
 .cta svg {
+  -webkit-transform: translateX(-8px);
+  -ms-transform: translateX(-8px);
   transform: translateX(-8px);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -391,10 +459,14 @@ span:hover {
 }
 
 .cta:hover svg {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
 .cta:active svg {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
 
@@ -408,22 +480,31 @@ span:hover {
   content: "";
   position: absolute;
   width: 100%;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
   background-color: #000;
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
   transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  -o-transition: transform 0.25s ease-out;
   transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 
 .cta:hover .hover-underline-animation:after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
   transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
   transform-origin: bottom left;
 }
-
-
-
 
 /* ############################################ QUOTE STYLING ############################################*/
 /* ############################################ QUOTE STYLING ############################################*/
@@ -432,8 +513,15 @@ span:hover {
 /* ############################################ QUOTE STYLING ############################################*/
 .quote-wrapper {
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 5rem auto;
   padding: 5rem 0;
@@ -451,6 +539,7 @@ span:hover {
   border-radius: 50%;
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -498,6 +587,8 @@ span:hover {
 }
 
 .reasons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
   overflow: hidden;
@@ -510,8 +601,13 @@ span:hover {
 /* ############################################ REVIEW PAGE STYLING ############################################*/
 
 .review-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-bottom: 2rem;
   overflow: hidden;
@@ -523,69 +619,68 @@ span:hover {
   max-width: 300px;
   min-height: 200px;
   background-color: #fff;
-  margin: 0 2rem 4rem 2rem ;
+  margin: 0 2rem 4rem 2rem;
   margin-bottom: 4rem;
   border-radius: 20px;
   padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-
-.person-info{
+.person-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-.person-image{
+.person-image {
   height: 50px;
   width: 50px;
   border-radius: 50%;
 }
 
-.person-image img{
+.person-image img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
 }
 
-.person-name h3{
+.person-name h3 {
   font-size: 1.5rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ############################################ CONTACT PAGE STYLING ############################################*/
 /* ############################################ CONTACT PAGE STYLING ############################################*/
 /* ############################################ CONTACT PAGE STYLING ############################################*/
 /* ############################################ CONTACT PAGE STYLING ############################################*/
 /* ############################################ CONTACT PAGE STYLING ############################################*/
-.contact-page{
+.contact-page {
   background-color: #1c1f1c;
 }
 
 .contact-wrapper {
   /* border: 2px solid black; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   /* margin-bottom: 5rem; */
   min-height: 700px;
@@ -621,6 +716,8 @@ span:hover {
 }
 
 .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 1rem;
 }
@@ -652,6 +749,7 @@ select {
   font-size: 1.5rem;
   border: 1px solid #47c972;
   border-radius: 4px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -675,6 +773,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
+  -webkit-appearance: textfield;
   appearance: textfield; /* Other browsers */
 }
 
@@ -684,8 +783,6 @@ label.required::after {
   color: red;
 }
 
-
-
 input[type="tel"] {
   width: 200px; /* Adjust the width as needed */
 }
@@ -694,9 +791,10 @@ input[type="tel"] {
   font-size: 2rem;
   font-weight: 500;
   color: #079637;
-  transition: all 0.5s ease-out
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
-  
 
 /* ############################################ FOOTER PAGE SYTLING ############################################*/
 /* ############################################ FOOTER PAGE SYTLING ############################################*/
@@ -721,6 +819,8 @@ input[type="tel"] {
 
 .social-media a {
   color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -740,6 +840,8 @@ input[type="tel"] {
   height: 50px;
   text-align: center;
   display: inline-block;
+  -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  -o-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   border-radius: 10px;
   position: fixed;
@@ -762,4 +864,3 @@ input[type="tel"] {
   /* line-height: 30px; */
   color: #fff;
 }
-  

@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -40,11 +41,17 @@ p {
 /* ############################################ UTILITY CLASSES ############################################*/
 /* ############################################ UTILITY CLASSES ############################################*/
 /* ############################################ UTILITY CLASSES ############################################*/
-.more-services{
+.more-services {
   width: 100%;
   padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -54,6 +61,8 @@ p {
   background: none;
   font-weight: 700;
   margin-bottom: 5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -67,7 +76,11 @@ p {
 }
 
 .cta svg {
+  -webkit-transform: translateX(-8px);
+  -ms-transform: translateX(-8px);
   transform: translateX(-8px);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -76,10 +89,14 @@ span:hover {
 }
 
 .cta:hover svg {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
 .cta:active svg {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
 
@@ -93,22 +110,31 @@ span:hover {
   content: "";
   position: absolute;
   width: 100%;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
   background-color: #000;
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
   transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  -o-transition: transform 0.25s ease-out;
   transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 
 .cta:hover .hover-underline-animation:after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
   transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
   transform-origin: bottom left;
 }
-
-
-
 
 /* ############################################ UTILITY CLASSES ############################################*/
 /* ############################################ UTILITY CLASSES ############################################*/
@@ -132,6 +158,8 @@ span:hover {
   background-color: #000;
   color: #fff;
   border-color: #000;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -139,11 +167,18 @@ span:hover {
 
 .nav-bar {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   /* position: fixed; */
   background-color: #efefef;
+  -webkit-box-shadow: 0px 10px 20px #0000001c;
   box-shadow: 0px 10px 20px #0000001c;
   z-index: 999;
   padding: 0 8rem;
@@ -158,10 +193,13 @@ span:hover {
 .logo img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -187,6 +225,8 @@ span:hover {
   height: 2px;
   color: #000;
   background-color: #000000;
+  -webkit-transition: 0.15s ease-in-out;
+  -o-transition: 0.15s ease-in-out;
   transition: 0.15s ease-in-out;
 }
 
@@ -205,6 +245,8 @@ span:hover {
 .open-menu {
   top: 50%;
   right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 4rem;
 }
@@ -223,10 +265,9 @@ span:hover {
 /* ############################################ FOOTER PAGE SYTLING ############################################*/
 /* ############################################ FOOTER PAGE SYTLING ############################################*/
 
-.hero{
-    height: 100vh;
+.hero {
+  height: 100vh;
 }
-
 
 .hero h1 {
   font-size: 4rem;
@@ -243,7 +284,11 @@ span:hover {
 
 .service-info {
   padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 5rem;
 }
@@ -257,6 +302,7 @@ span:hover {
 .info-image img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 

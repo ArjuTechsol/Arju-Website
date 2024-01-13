@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -33,6 +34,8 @@ li {
 
 button {
   font-size: 1rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 3rem;
   border-radius: 0.4rem;
@@ -40,6 +43,7 @@ button {
   padding: 0 1.2rem;
   color: #fff;
   border: none;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(143, 142, 142, 0.329);
   box-shadow: 0 0.5rem 1rem rgba(143, 142, 142, 0.329);
   background: #0b88b9;
 }
@@ -69,6 +73,8 @@ button:hover {
   background-color: #000;
   color: #fff;
   border-color: #000;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -89,34 +95,48 @@ button:hover {
   font-size: 3rem;
 }
 
-
-
 .product-card {
   border: 2px solid black;
   width: 100%;
   margin-top: 5rem;
   padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
 .product-images {
   /* border: 2px solid blue; */
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .other-images {
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 0.7rem;
 }
 
-.other-images img:hover{
+.other-images img:hover {
   cursor: pointer;
 }
 
@@ -126,7 +146,7 @@ button:hover {
   width: 300px;
 }
 
-.main-image:hover{
+.main-image:hover {
   cursor: pointer;
 }
 
@@ -138,13 +158,19 @@ button:hover {
 
 .product-details {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   overflow: hidden;
 }
 
-.product-details div{
+.product-details div {
   overflow: hidden;
 }
 
@@ -158,7 +184,11 @@ button:hover {
 }
 
 .detail div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   border-bottom: 1px solid rgba(0, 0, 0, 0.192);
   margin-bottom: 0.5rem;
@@ -179,6 +209,7 @@ button:hover {
 .product-images img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -189,12 +220,18 @@ button:hover {
   border: 2px solid black;
   margin: 5rem auto;
   padding: 4rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
 }
 
 .more-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -213,16 +250,15 @@ button:hover {
   width: 50%;
 }
 
-.detail{
+.detail {
   overflow: hidden;
 }
 
-.detail div{
+.detail div {
   overflow: hidden;
 }
 
-
-.product-description{
+.product-description {
   overflow: hidden;
 }
 
@@ -232,10 +268,21 @@ button:hover {
   border: 2px solid black;
   margin: 5rem auto;
   padding: 4rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
 }
@@ -263,6 +310,7 @@ select {
   display: inline-block;
   border: 1px solid #47c972;
   border-radius: 4px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -286,12 +334,17 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
+  -webkit-appearance: textfield;
   appearance: textfield; /* Other browsers */
 }
 
 .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
@@ -300,13 +353,14 @@ input[type="number"] {
   margin-top: 3rem;
 }
 
-
 /* ############################################ OTHER PRODUCTS SECTION ############################################*/
 /* ############################################ OTHER PRODUCTS SECTION ############################################*/
 .other {
   border: 2px solid black;
   margin: 5rem auto;
   padding: 4rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -316,9 +370,18 @@ input[type="number"] {
   height: 350px;
   margin-bottom: 2rem;
   padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -330,6 +393,8 @@ input[type="number"] {
   height: 80%;
   width: 100%;
   overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -337,6 +402,8 @@ input[type="number"] {
   height: 100%;
   width: 100%;
   /* object-fit: cover; */
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -345,7 +412,12 @@ input[type="number"] {
 }
 
 .product-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-} 
+}

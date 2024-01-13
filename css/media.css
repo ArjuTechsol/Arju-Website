@@ -16,19 +16,27 @@
     width: 100vw;
   }
 
-  .main-headings::after{
+  .main-headings::after {
     height: 2px;
   }
 
   .nav-bar {
     opacity: 1;
     background-color: transparent;
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
 
   .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 80%;
     height: 100vh;
@@ -37,6 +45,8 @@
     right: -100%;
     z-index: 100;
     background-color: #000000;
+    -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
     transition: all 0.8s ease-in-out;
   }
 
@@ -66,7 +76,12 @@
 
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ABOUT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
   .about-images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     gap: 2rem;
   }
@@ -78,6 +93,8 @@
 
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SERVICES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
   .service-boxes {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
 
@@ -90,6 +107,7 @@
   .box img {
     height: 50px;
     width: 50px;
+    -o-object-fit: cover;
     object-fit: cover;
   }
 
@@ -101,8 +119,15 @@
   /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ BUTTON @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
   .contact-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 100%;
     width: 100%;
@@ -115,6 +140,8 @@
   .contact-info {
     max-width: 75%;
     text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -156,19 +183,27 @@
     margin: 0 auto;
   }
 
-  .main-headings::after{
+  .main-headings::after {
     height: 2px;
   }
 
   .nav-bar {
     opacity: 1;
     background-color: transparent;
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
 
   .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 80%;
     height: 100vh;
@@ -177,6 +212,8 @@
     right: -100%;
     z-index: 100;
     background-color: #000000;
+    -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
     transition: all 0.8s ease-in-out;
   }
 
@@ -205,12 +242,19 @@
   }
 
   .about-images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     gap: 2rem;
   }
 
   .service-boxes {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
 
@@ -222,6 +266,7 @@
   .box img {
     height: 50px;
     width: 50px;
+    -o-object-fit: cover;
     object-fit: cover;
   }
 
@@ -252,9 +297,6 @@
     height: 30px;
   }
 }
-
-
-
 
 /* ######################################################## MEDIA QUERIES ################################################# */
 /* ######################################################## MEDIA QUERIES ################################################# */
