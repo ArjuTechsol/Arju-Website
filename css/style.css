@@ -114,11 +114,11 @@ header {
   /* border: 3px solid blue; */
   height: 100vh;
   /* width: 90%; */
-  color: #47c972;
+  color: #00aa39;
   margin: 0 auto;
   padding: 0 15rem;
   background-color: #ffffff;
-  background-image: url("../Images/pexels-cátia-matos-1072179.jpg");
+  background-image: url("https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -542,20 +542,25 @@ span:hover {
 /* ############################################ QUOTE STYLING ############################################*/
 /* ############################################ QUOTE STYLING ############################################*/
 .quote-wrapper {
-  background-color: #fff;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   -webkit-box-orient: vertical;
+
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  
   margin: 5rem auto;
   padding: 5rem 0;
   border-radius: 10px;
+
 }
 
 .quote-image {

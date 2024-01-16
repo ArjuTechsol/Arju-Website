@@ -74,7 +74,7 @@ gsap.from(".image1", {
         trigger: ".image1",
         scroller: "body",
         start: "top 70%",
-        end: "top 40%",
+        end: "top 60%",
         scrub: 2,
     },
 });
@@ -85,9 +85,9 @@ gsap.from(".image2", {
     scrollTrigger: {
         trigger: ".image2",
         scroller: "body",
-        start: "top 70%",
-        end: "top 40%",
-        scrub: 1,
+        start: "top 90%",
+        end: "top 80%",
+        scrub: 2,
     },
 });
 
@@ -98,7 +98,7 @@ gsap.from(".image3", {
         trigger: ".image3",
         scroller: "body",
         start: "top 70%",
-        end: "top 40%",
+        end: "top 60%",
         scrub: 2,
     },
 });
@@ -112,7 +112,7 @@ gsap.from(".box img", {
         trigger: ".box img",
         scroller: "body",
         start: "top 80%",
-        end: "top 40%",
+        end: "top 70%",
         scrub: 1,
     },
 });
@@ -124,8 +124,8 @@ gsap.from(".box h2", {
     scrollTrigger: {
         trigger: ".box h2",
         scroller: "body",
-        start: "top 70%",
-        end: "top 65%",
+        start: "top 80%",
+        end: "top 70%",
         scrub: 1,
     },
 });
@@ -137,8 +137,8 @@ gsap.from(".box p", {
     scrollTrigger: {
         trigger: ".box p",
         scroller: "body",
-        start: "top 70%",
-        end: "top 65%",
+        start: "top 80%",
+        end: "top 75%",
         scrub: 1,
     },
 });
@@ -149,8 +149,8 @@ gsap.from(".see-more span", {
     scrollTrigger: {
         trigger: ".see-more span",
         scroller: "body",
-        start: "top 90%",
-        end: "top 80%",
+        start: "top 80%",
+        end: "top 70%",
         scrub: 1,
     },
 });
@@ -164,7 +164,7 @@ gsap.from(".quote-wrapper", {
         trigger: ".quote-wrapper",
         scroller: "body",
         start: "top 70%",
-        end: "top 40%",
+        end: "top 70%",
         scrub: 2,
     },
 });
@@ -388,10 +388,3 @@ tl4.from(".rc6", {
         scrub: 1,
     },
 });
-
-
-
-
-//////////////////  GSAP ANIMATION FOR CONTACT PAGE //////////////////
-
-
