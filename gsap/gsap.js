@@ -109,7 +109,7 @@ gsap.from(".box img", {
     scale: 0,
     opacity: 0,
     scrollTrigger: {
-        trigger: ".box img",
+        trigger: ".box",
         scroller: "body",
         start: "top 80%",
         end: "top 70%",
@@ -122,7 +122,7 @@ gsap.from(".box h2", {
     opacity: 0,
     stagger: 0.4,
     scrollTrigger: {
-        trigger: ".box h2",
+        trigger: ".box",
         scroller: "body",
         start: "top 80%",
         end: "top 70%",
@@ -135,7 +135,7 @@ gsap.from(".box p", {
     opacity: 0,
     stagger: 0.4,
     scrollTrigger: {
-        trigger: ".box p",
+        trigger: ".box",
         scroller: "body",
         start: "top 80%",
         end: "top 75%",
@@ -147,10 +147,10 @@ gsap.from(".see-more span", {
     opacity: 0,
     stagger: 0.4,
     scrollTrigger: {
-        trigger: ".see-more span",
+        trigger: ".box",
         scroller: "body",
         start: "top 80%",
-        end: "top 70%",
+        end: "top 75%",
         scrub: 1,
     },
 });
@@ -315,7 +315,7 @@ tl4.from(".rc1", {
         trigger: ".rc1",
         scroller: "body",
         start: "top 80%",
-        end: "top 30%",
+        end: "top 45%",
         scrub: 1,
     },
 });
@@ -328,7 +328,7 @@ tl4.from(".rc2", {
     scrollTrigger: {
         trigger: ".rc2",
         start: "top 80%",
-        end: "top 30%",
+        end: "top 55%",
         scrub: 1,
     },
 });
@@ -342,7 +342,7 @@ tl4.from(".rc3", {
         trigger: ".rc1",
         scroller: "body",
         start: "top 80%",
-        end: "top 30%",
+        end: "top 45%",
         scrub: 1,
     },
 });
@@ -356,7 +356,7 @@ tl4.from(".rc4", {
         trigger: ".rc1",
         scroller: "body",
         start: "top 40%",
-        end: "top 0%",
+        end: "top 20%",
         scrub: 1,
     },
 });
@@ -370,7 +370,7 @@ tl4.from(".rc5", {
         trigger: ".rc1",
         scroller: "body",
         start: "top 40%",
-        end: "top 0%",
+        end: "top 20%",
         scrub: 1,
     },
 });
@@ -381,10 +381,10 @@ tl4.from(".rc6", {
     ease: "power4.InOut",
 
     scrollTrigger: {
-        trigger: ".rc1",
         scroller: "body",
         start: "top 40%",
-        end: "top 0%",
+        trigger: ".rc1",
+        end: "top 20%",
         scrub: 1,
     },
 });

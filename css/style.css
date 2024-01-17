@@ -111,9 +111,7 @@ div{
 }
 
 header {
-  /* border: 3px solid blue; */
   height: 100vh;
-  /* width: 90%; */
   color: #00aa39;
   margin: 0 auto;
   padding: 0 15rem;
@@ -129,7 +127,6 @@ header {
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ NAVBAR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 nav {
-  /* border: 4px solid red; */
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -282,12 +279,6 @@ nav {
 /* ############################################ ABOUT PAGE STYLING ############################################*/
 /* ############################################ ABOUT PAGE STYLING ############################################*/
 
-/* #About {
-  background-image: url("../Images/pexels-cátia-matos-1072179.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-} */
-
 .about-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,14 +311,19 @@ nav {
   
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+
   -ms-flex-direction: row;
   flex-direction: row;
+
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
+
   justify-content: space-between;
+
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  
   margin: 5rem;
   display: flex;
 }
@@ -601,10 +597,6 @@ span:hover {
   padding: 0 5rem;
 }
 
-.why-us-wrapper span {
-  font-weight: 800;
-}
-
 .why-us-wrapper i {
   padding-top: 0.5rem;
   font-size: 3rem;
@@ -711,14 +703,12 @@ span:hover {
 }
 
 .contact-wrapper {
-  /* border: 2px solid black; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  /* margin-bottom: 5rem; */
   min-height: 700px;
   border-radius: 15px;
 }
@@ -876,9 +866,11 @@ input[type="tel"] {
   height: 50px;
   text-align: center;
   display: inline-block;
+  
   -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   -o-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+
   border-radius: 10px;
   position: fixed;
   bottom: 5vh;

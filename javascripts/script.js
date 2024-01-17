@@ -1,6 +1,9 @@
 
-// import LocomotiveScroll from 'locomotive-scroll';
 
+
+function reloadPage() {
+    location.reload();
+}
 
 
 window.onload = function () {
